@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnFood - O que tem na geladeira?</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header-content">
+            <a href="#" class="logo">On<span>Food</span></a>
+            <nav class="nav-links">
+                <a href="#">Início</a>
+                <a href="#">Receitas Salvas</a>
+                <a href="#" class="btn-login">Entrar</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Cozinhe com o que você tem.</h1>
+                <p>Adicione os ingredientes que estão na sua geladeira e nós encontraremos a receita perfeita para você.</p>
+                
+                <div class="search-box">
+                    <div class="input-group">
+                        <input type="text" placeholder="Ex: Frango, tomate, creme de leite..." id="ingredient-input">
+                        <button class="btn-primary">Buscar Receitas</button>
+                    </div>
+                    
+                    <div class="tags-container">
+                        <span class="tag">Ovo <button class="remove-tag">&times;</button></span>
+                        <span class="tag">Farinha de Trigo <button class="remove-tag">&times;</button></span>
+                        <span class="tag">Leite <button class="remove-tag">&times;</button></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="results container">
+            <div class="results-header">
+                <h2>Receitas Encontradas (3)</h2>
+                <select class="sort-select">
+                    <option value="match">Maior compatibilidade</option>
+                    <option value="time">Mais rápidas</option>
+                </select>
+            </div>
+
+            <div class="recipe-grid">
+                <article class="recipe-card">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&q=80&w=400');"></div>
+                    <div class="card-content">
+                        <span class="badge match">Você tem tudo!</span>
+                        <h3>Panqueca Simples</h3>
+                        <p class="recipe-meta">Tempo: 15 min | Porções: 4</p>
+                        <a href="#" class="btn-outline">Ver Receita</a>
+                    </div>
+                </article>
+
+                <article class="recipe-card">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&q=80&w=400');"></div>
+                    <div class="card-content">
+                        <span class="badge partial">Faltam 2 ingredientes</span>
+                        <h3>Bolo de Caneca</h3>
+                        <p class="recipe-meta">Tempo: 5 min | Porções: 1</p>
+                        <a href="#" class="btn-outline">Ver Receita</a>
+                    </div>
+                </article>
+
+                <article class="recipe-card">
+                    <div class="card-img" style="background-image: url('https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&q=80&w=400');"></div>
+                    <div class="card-content">
+                        <span class="badge partial">Falta 1 ingrediente</span>
+                        <h3>Macarrão Cremoso</h3>
+                        <p class="recipe-meta">Tempo: 20 min | Porções: 2</p>
+                        <a href="#" class="btn-outline">Ver Receita</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 OnFood. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
